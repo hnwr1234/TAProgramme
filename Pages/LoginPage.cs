@@ -1,10 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TAProgmme_2.Utilities;
 
 namespace TAProgmme_2.Pages
@@ -27,7 +22,7 @@ namespace TAProgmme_2.Pages
             usernameTextbox.SendKeys("hari");
 
             Wait.WaitToBeVisible(driver, "Id", "Password", 7);
-           
+
 
             //Identify password textbox and enter valid password
             IWebElement passwordTextbox = driver.FindElement(By.Id("Password"));
